@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Hello world</h1>
+    <h2>Famous Songs: {{ $name }}</h2>
+    <ul>
+        @foreach ($song as $song)
+            <li>{{$song}}</li>
+        @endforeach
+    </ul>
 </body>
 </html>

@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'name' =>  'AC DC',
+        'song' => [
+            'Back in Black', 'Thunderstruck', 'T.N.T', 
+            'You Shook Me All Night Long', 'Highway To Hell',
+            'The Razors Edge', 'Hells Bells'
+        ]
+    ];
+    return view('home',  $data);
 });
