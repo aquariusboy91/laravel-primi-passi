@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/concert', function () {
+    return view('concert');
+})->name('concert');
+
+Route::get('/history', function () {
+    return view('history');
+})->name('history');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+
+Route::get('/albums', function () {
+    return view('albums');
+})->name('albums');
+
 Route::get('/', function () {
     $data = [
         'name' =>  'AC DC',
